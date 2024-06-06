@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'rk/blog_core',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '219f95759bf3a5476e7cb69fe6c3aad2868b6408',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'rk/blog_core' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '219f95759bf3a5476e7cb69fe6c3aad2868b6408',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

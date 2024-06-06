@@ -1,6 +1,6 @@
 === Blog Core ===
-Contributors: yourwordpressuserid
-Donate link: https://yourwebsite.com/donate/
+Contributors: rkenthusiast@gmail.com
+Donate link: https://rkenthusiast.com/donate/
 Tags: blog, gutenberg, blocks, theme
 Requires at least: 6.1
 Tested up to: 6.4
@@ -24,6 +24,7 @@ Features:
 
 1. **Install Dependencies**: Before uploading the plugin, make sure to install any dependencies required by running the following command in the plugin directory:
    ```bash
+   nvm use v20
    npm install
 
 2. Install Composer Dependencies: Before uploading the plugin, make sure to install any dependencies required by running the following command in the plugin directory: 

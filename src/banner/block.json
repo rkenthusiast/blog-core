@@ -6,7 +6,7 @@
 	"title": "Homepage - Banner",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "Example Dynamic new block.",
+	"description": "Enhance your website's homepage with the Create Block Banner widget",
 	"attributes": {
 		"selectedPost": {
 			"type": "number",

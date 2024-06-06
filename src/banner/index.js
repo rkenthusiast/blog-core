@@ -4,8 +4,8 @@ import Edit from './edit';
 import Save from './save';
 
 registerBlockType('create-block/banner', {
-    title: __('My Banner', 'your-text-domain'),
-    icon: 'dashicons-admin-settings',
+    title: __('Homepage - Banner', 'banner'),
+    icon: 'smiley',
     category: 'common',
     attributes: {
         selectValue: {
