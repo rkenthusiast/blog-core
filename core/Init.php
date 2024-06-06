@@ -20,8 +20,6 @@ final class Init {
 	 */
 	public static function get_services() {
 		return array(
-			Shortcodes\Newblock::class,
-			Blocks\Newblock::class,
 			Shortcodes\Banner::class,
 			Shortcodes\Advertisement::class,
 			Blocks\Banner::class,
