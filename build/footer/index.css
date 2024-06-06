@@ -1,0 +1,188 @@
+/*!***********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/footer/editor.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-footer {
+  margin: unset;
+}
+.wp-block-create-block-footer .footer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 64px;
+  background-color: #141624;
+  overflow: hidden;
+  background-color: #181A2A;
+  border-top: 1px solid #242535;
+}
+.wp-block-create-block-footer .footer__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1216px;
+}
+.wp-block-create-block-footer .footer h2 {
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 28px;
+  margin-bottom: 12px;
+}
+.wp-block-create-block-footer .footer p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  color: #97989F;
+}
+.wp-block-create-block-footer .footer__about {
+  color: #fff;
+  max-width: 289px;
+  flex: 1;
+}
+.wp-block-create-block-footer .footer__about p {
+  max-width: 277px;
+}
+.wp-block-create-block-footer .footer__email {
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+.wp-block-create-block-footer .footer__email span {
+  color: #97989F;
+}
+.wp-block-create-block-footer .footer__phone {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+.wp-block-create-block-footer .footer__phone span {
+  color: #97989F;
+}
+.wp-block-create-block-footer .footer__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+  flex: 1;
+  max-width: 495px;
+}
+.wp-block-create-block-footer .footer__menu h2 {
+  margin-bottom: 24px;
+}
+.wp-block-create-block-footer .footer__menu__link a {
+  font-size: 16px;
+  line-height: 24x;
+  margin-bottom: 24px;
+  color: #97989F;
+  text-decoration: none;
+}
+.wp-block-create-block-footer .footer__menu__link li {
+  margin-bottom: 8px;
+}
+.wp-block-create-block-footer .footer__subscribe {
+  display: flex;
+  flex-direction: column;
+  background-color: #242535;
+  padding: 32px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.wp-block-create-block-footer .footer__subscribe__subscribe__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.wp-block-create-block-footer .footer__subscribe input {
+  all: unset;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  width: 100%;
+  background-color: #181A2A;
+  box-shadow: 0 0 0 1px #3B3C4A;
+  font-size: 16px;
+  line-height: 24px;
+  min-width: 320px;
+}
+.wp-block-create-block-footer .footer__subscribe button {
+  display: block;
+  padding: 12px 20px;
+  background-color: #4B6BFB;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  margin-top: 8px;
+}
+.wp-block-create-block-footer .footer__copyright {
+  display: flex;
+  flex-direction: row;
+  flex: 100%;
+  padding-block: 32px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px -1px 0px 0px #242535;
+  margin-top: 42px;
+}
+.wp-block-create-block-footer .footer__copyright img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.wp-block-create-block-footer .footer__copyright__left {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.wp-block-create-block-footer .footer__copyright__description {
+  display: flex;
+  flex-direction: column;
+}
+.wp-block-create-block-footer .footer__copyright h3 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 2px;
+}
+.wp-block-create-block-footer .footer__copyright span {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+.wp-block-create-block-footer .footer__copyright__menu {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+.wp-block-create-block-footer .footer__copyright__menu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.wp-block-create-block-footer .footer__copyright__menu li:not(:first-child) {
+  border-left: 2px solid #242535;
+}
+.wp-block-create-block-footer .footer__copyright__menu a {
+  all: unset;
+  color: #BABABF;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map*/

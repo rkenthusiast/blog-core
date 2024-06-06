@@ -3,6 +3,7 @@ import { PanelBody, TextControl, Button } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import { Fragment } from '@wordpress/element';
+import './editor.scss';
 
 const Edit = ({ attributes, setAttributes }) => {
     const {
@@ -155,22 +156,54 @@ const Edit = ({ attributes, setAttributes }) => {
             </InspectorControls>
             <div {...blockProps}>
 
-                <p>{aboutTitle}</p>
-                <p>{aboutDescription}</p>
-                <p>{emailLabel}</p>
-                <p>{email}</p>
-                <p>{phoneLabel}</p>
-                <p>{phone}</p>
-                <p>{menuLabel1}</p>
-                <p>{menu1}</p>
-                <p>{menuLabel2}</p>
-                <p>{menu2}</p>
-                <p>{newsletterDescription}</p>
-                <p>{newsletterEmail}</p>
-                <p>{newsletterButtonLabel}</p>
-                <p>{newsletterTitle}</p>
-                <p>{footerBottomCopyright}</p>
-                <p>{FooterBottomMenu}</p>
+            <div class="footer">
+				<div class="footer__container">
+					<div class="footer__about">
+						<h2>{aboutTitle}</h2>
+						<p>{aboutDescription}</p>
+						<a href="#" class="footer__email"><span>{emailLabel} : </span>{email}</a>
+						<a href="tel:%6$s" class="footer__phone"><span>{phoneLabel} : </span>{phone}</a>
+					</div>
+					<div class="footer__menu">
+						<div class="footer__menu__link footer__menu__link--1">
+							<h2>{menu1}</h2>
+							{menu1Value}
+						</div>
+						<div class="footer__menu__link footer__menu__link--2">
+							<h2>{menu2}</h2>
+							{menu2Value}
+						</div>
+					</div>
+					<div class="footer__subscribe">
+						<form action="/submit-form" method="POST">
+							<div class="footer__subscribe__top">
+								<h2>{newsletterTitle}</h2>
+								<p>{newsletterDescription}</p>
+							</div>
+							<div class="footer__subscribe__bottom">
+								<input type="text" id="title" name="title" required />
+								<button type="button" onclick="return false;">{newsletterButtonLabel}</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="footer__copyright">
+						<div class="footer__copyright__left">
+							<img src="%16$s" />
+							<div class="footer__copyright__description">
+								<h3>MyBlog</h3>
+								<span>{footerBottomCopyright}</span>
+							</div>
+						</div>
+						<div class="footer__copyright__right">
+							<nav>
+							{FooterBottomMenu}
+							</nav>
+
+						</div>
+					</div>
+				</div>
+			</div>
             </div>
         </Fragment>
     );

@@ -24,44 +24,19 @@ class Banner extends BaseController {
 	}
 
 	/**
-	 * Run shortcode.
+	 * Renders the Banner Block.
 	 *
-	 * @param [type] $attr default attr.
-	 * @param [type] $content default content.
-	 * @return mixed shortcode render.
+	 * This function renders the Banner Block based on the provided attributes.
+	 *
+	 * @param array       $attributes The attributes of the block.
+	 * @param string|null $content    Optional. The content within the block.
+	 * @return string                 The rendered HTML content of the block.
 	 */
-	// public function get_banner_shortcode( $attr, $content ) {
-	// return do_shortcode( '[blog_core_banner]' );
-	// }
-
-	public function get_banner_shortcode( $atts, $content = null ) {
-
-		// Extract attributes and provide default values
-		$atts = shortcode_atts(
-			array(
-				'selectedPost' => '',  // Default post
-			),
-			$atts,
-			'blog_core_banner'
-		);
-
-		// Create the shortcode with attributes
-		$shortcode = sprintf(
-			'[blog_core_banner selectedPost="%s"]',
-			esc_attr( $atts['selectedPost'] )
-		);
-
-		// print_r($shortcode);die();
-
-		// Return the output of the do_shortcode function
-		return do_shortcode( $shortcode );
-	}
-
-	function render_banner_block( $attributes, $content = null ) {
+	public function render_banner_block( $attributes, $content = null ) {
 
 		$post_id = $attributes['selectValue'];
 
-		// Fetch post details
+		// Fetch post details.
 		$post = get_post( $post_id );
 		if ( ! $post ) {
 			return '';
@@ -73,9 +48,12 @@ class Banner extends BaseController {
 		$author_image_url   = get_avatar_url( $author_id );
 		$featured_image_url = get_the_post_thumbnail_url( $post_id, 'full' );
 		$post_date      = get_the_date( 'F j, Y' );
+
+		// Assuming $featured_image_url contains the URL of the background image.
+		$css = 'style="background-image: url(' . esc_url( $featured_image_url ) . ');"';
 		ob_start();
 		?>
-	<div class="hero" style="background-image: url(<?php echo esc_url( $featured_image_url ); ?>);">
+	<div class="hero" <?php echo esc_attr( $css ); ?>>
 		<div class="hero__card">
 			<div class="hero__card__tag"><?php echo esc_html( $post->post_title ); ?></div>
 			<div class="hero__card__title"><?php echo esc_html( $post->post_title ); ?></div>

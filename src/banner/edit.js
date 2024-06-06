@@ -19,10 +19,11 @@ const Edit = withSelect((select) => {
     const selectedPost = posts && selectValue ? posts.find(post => post.id.toString() === selectValue) : null;
 
     const blockProps = useBlockProps();
-    const options = posts ? posts.map(post => ({
+
+    const options = posts ? [{ label: __('Select an option', 'create-block'), value: '' }, ...posts.map(post => ({
         label: post.title.rendered,
         value: post.id.toString()
-    })) : [];
+    })) ] : [];
 
     const authorName = selectedPost && selectedPost._embedded && selectedPost._embedded.author[0].name;
     const authorLink = selectedPost && selectedPost._embedded && selectedPost._embedded.author[0].link;
