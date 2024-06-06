@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/advertisement",
+  "version": "0.1.0",
+  "title": "Homepage - Advertisement",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example Dynamic new block.",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Advertisement"
+    },
+    "description": {
+      "type": "string",
+      "default": "You can place ads"
+    },
+    "recommendedImageSize": {
+      "type": "string",
+      "default": "750x100"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "advertisement",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

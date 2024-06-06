@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/banner",
+	"version": "0.1.0",
+	"title": "Homepage - Banner",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example Dynamic new block.",
+	"attributes": {
+		"selectedPost": {
+			"type": "number",
+			"default": 0
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "banner",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

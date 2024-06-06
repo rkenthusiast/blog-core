@@ -1,0 +1,79 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/footer",
+  "version": "0.1.0",
+  "title": "Homepage - footer",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example Dynamic new block.",
+  "attributes": {
+    "aboutTitle": {
+      "type": "string",
+      "default": "About"
+    },
+    "aboutDescription": {
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet, consectetur"
+    },
+    "emailLabel": {
+      "type": "string",
+      "default": ""
+    },
+    "email": {
+      "type": "string",
+      "default": ""
+    },
+    "phoneLabel": {
+      "type": "string",
+      "default": ""
+    },
+    "phone": {
+      "type": "string",
+      "default": ""
+    },
+    "menuLabel1": {
+      "type": "string",
+      "default": "Menu 1"
+    },
+    "menu1": {
+      "type": "string",
+      "default": ""
+    },
+    "menuLabel2": {
+      "type": "string",
+      "default": "Menu 2"
+    },
+    "menu2": {
+      "type": "string",
+      "default": ""
+    },
+    "newsletterTitle": {
+      "type": "string",
+      "default": "Newsletter"
+    },
+    "newsletterDescription": {
+      "type": "string",
+      "default": ""
+    },
+    "newsletterButtonLabel": {
+      "type": "string",
+      "default": "Subscribe"
+    },
+    "footerBottomCopyright": {
+      "type": "string",
+      "default": "© JS Template 2023. All Rights Reserved.cribe"
+    },
+    "FooterBottomMenu": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "footer",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

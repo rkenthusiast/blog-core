@@ -1,0 +1,43 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-advertisement {
+	margin: unset;
+
+	.advertisement {
+		width: 100%;
+		padding-block: 40px;
+	}
+
+	.advertisement__box {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-width: 750px;
+		margin: 0 auto;
+		background-color: #181A2A;
+		border-radius: 12px;
+		text-align: center;
+		color: #696A75;
+		padding-block: 15px;
+	}
+
+	.advertisement h4 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.advertisement p {
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: 700;
+	}
+
+	.advertisement span {
+		font-size: 1.125rem;
+		line-height: 26px;
+	}
+}

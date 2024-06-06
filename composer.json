@@ -1,0 +1,30 @@
+{
+    "name": "rk/blog_core",
+    "description": "Enhance your blog theme with powerful Gutenberg blocks for creating engaging content.",
+    "type": "project",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Ram Enthusiast",
+            "email": "rkenthusiast@gmail.com"
+        }
+    ],
+    "config": {
+        "vendor-dir": "lib",
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
+    "repositories":[
+        {
+          "type": "composer",
+          "url": "https://wpackagist.org"
+        }
+      ],
+    "require": {
+        "composer/installers": "^1"
+      },
+    "autoload": {
+        "psr-4": {"App\\": "./core"}
+    }
+}

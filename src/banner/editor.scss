@@ -1,0 +1,86 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ body {
+	background-color: #141624;
+ }
+ 
+.wp-block-create-block-banner {
+	margin: unset;
+
+	.hero {
+		height: 600px;
+		max-width: 1216px;
+		background-image: url("./images/hero.jpg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center;
+		margin: 0 auto 104px;
+		border-radius: 16px;
+		position: relative;
+	}
+
+	.hero__card {
+		display: flex;
+		flex-direction: column;
+		border-radius: 12px;
+		width: 55%;
+		max-width: 598px;
+		background-color: #181A2A;
+		padding: 40px;
+		box-sizing: border-box;
+		position: absolute;
+		bottom: -64px;
+		left: 64px;
+		box-shadow: 0 0 0 1px #242535;
+	}
+
+	.hero__card__tag {
+		background-color: #4B6BFB;
+		color: #fff;
+		border-radius: 6px;
+		margin-bottom: 16px;
+		padding: 4px 10px;
+		font-size: 14px;
+		line-height: 20px;
+		width: fit-content;
+	}
+
+	.hero__card__title {
+		color: #fff;
+		font-size: 2.25rem;
+		font-weight: 700;
+		line-height: 40px;
+		margin-bottom: 24px;
+	}
+
+	.hero__card__author {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.hero__card__author img {
+		width: 36px;
+		border-radius: 50%;
+		margin-left: 12px;
+		margin: unset;
+	}
+
+	.hero__card__author h3 {
+		font-size: 16px;
+		line-height: 24px;
+		color: #97989F;
+	}
+
+	.hero__card__author p {
+		font-size: 16px;
+		line-height: 24px;
+		color: #97989F;
+	}
+
+}
